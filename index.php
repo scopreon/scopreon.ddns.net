@@ -30,6 +30,7 @@
     <a href="https://twitter.com/QuarBoredBot"><img class='sm' alt='Twitter' src="images/twitter.png"
       width='50' height='50'></a>
   </div>
+  <?php echo('hi') ?>
   <script src="scripts/main.js"></script>
 </body>
 </html>
