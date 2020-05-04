@@ -12,8 +12,8 @@
     <nav>
       <ul class='navigation'>
         <li><a href="index.php">Home</a></li>
-        <li><a class='current' href="programming.html">Programming</a></li>
-        <li><a href="other.html">Other</a></li>
+        <li><a class='current' href="programming.php">Programming</a></li>
+        <li><a href="other.php">Other</a></li>
       </ul>
     </nav>
   </div>
