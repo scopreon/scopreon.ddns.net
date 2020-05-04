@@ -11,9 +11,9 @@
   <div>
     <nav>
       <ul class='navigation'>
-        <li><a href="index.php">Home</a></li>
-        <li><a class='current' href="programming.php">Programming</a></li>
-        <li><a href="other.php">Other</a></li>
+        <li><a href="http://192.168.1.163/index">Home</a></li>
+        <li><a class='current' href="http://192.168.1.163/programming">Programming</a></li>
+        <li><a href="other.php">http://192.168.1.163/other</a></li>
       </ul>
     </nav>
   </div>
