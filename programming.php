@@ -13,7 +13,7 @@
       <ul class='navigation'>
         <li><a href="http://192.168.1.163/index">Home</a></li>
         <li><a class='current' href="http://192.168.1.163/programming">Programming</a></li>
-        <li><a href="other.php">http://192.168.1.163/other</a></li>
+        <li><a href="http://192.168.1.163/other">Other</a></li>
       </ul>
     </nav>
   </div>
