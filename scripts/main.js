@@ -23,11 +23,11 @@ function myFunc(){
 function setName(){
   let name = prompt('What is your name');
   document.querySelector('h1').textContent = name;
-}*/
+}
 
 document.querySelector('h1').onclick = function(){
     var listItem = document.createElement('li');
     var listContent = prompt('What content do you want the list item to have?');
     listItem.textContent = listContent;
     (document.querySelector('ul')).appendChild(listItem);
-}
+}*/
