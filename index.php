@@ -20,7 +20,7 @@
   <!-- about me stuff-->
   <div style='clear:left;' id='title'>
     <h1>Home sweet home</h1>
-    <p>Website kinda just for any stuff I wanna share mainly just <a href="programming.html">programming</a> and random stuff</p>
+    <p>Website kinda just for any stuff I wanna share mainly just <a href="programming.php">programming</a> and random stuff</p>
   </div>
   <div class='social_media'>
     <a href="https://github.com/scopreon"><img class='sm' alt='Github' src="images/github.png"
