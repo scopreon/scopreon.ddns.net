@@ -17,7 +17,9 @@
       </ul>
     </nav>
   </div>
-  <p>nothing here yet...</p>
+  <div style='clear:left;'>
+    <p>nothing here yet...</p>
+  </div>
 
 </body>
 </html>
