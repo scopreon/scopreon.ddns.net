@@ -3,7 +3,7 @@ html {
 }
 body {
   background-color: #ccffff;
-  width: 1200px;
+  width: 700px;
   border: 5px solid black;
   font-family: "Sans-Serif",Tahoma, sans-serif;
 }
@@ -45,3 +45,16 @@ li a.current {
 }
 .sm {text-decoration: none;}
 .sm:hover{filter: invert(20%);}
+
+#yoloForm {
+  background-color: #ffff00;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #73AD21;
+}
+
+#yoloForm input {
+  width: 100%;
+  clear: both;
+}
