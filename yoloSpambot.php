@@ -8,7 +8,7 @@
     }
     else {
       echo "We are processing your request now :)";
-      $output = shell_exec('python /Users/saulcooperman/PycharmProjects/Challanges/yolospambotArgs.py'.' '.$_POST["link"].' '.strval($_POST["num"]).' "'.$_POST["messages"].'"');
+      $output = shell_exec('python /var/www/html/yolospambotArgs.py'.' '.$_POST["link"].' '.strval($_POST["num"]).' "'.$_POST["messages"].'"');
       echo $output;
     }
   ?>
