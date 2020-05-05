@@ -22,6 +22,7 @@
     <p>This is where I'm gonna put some programming projects and tests</p>
   </div>
   <div id='yoloForm'>
+    <h3>Yolo Spambot</h3>
     <form action="yoloSpambot.php" method="post" target="hidden-form">
       <label>Link:</label>
       <input type="text" name="link" placeholder='https://onyolo.com/m/tphDmXwK6E?w=xyz'><br>
