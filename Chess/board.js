@@ -10,7 +10,8 @@ var start = true;
 
 function setup(){
   num = 0;
-  createCanvas(size,size);
+  var canvas = createCanvas(size,size);
+  canvas.parent('chessBoard');
   grid = create2DArray(dim,dim);
   console.log(grid);
   for(var i = 0; i < dim; i++){

@@ -17,7 +17,10 @@
         </ul>
       </nav>
     </div>
+    <div style='clear:left;' id='chessBoard'>
       <script src="Chess/board.js"></script>
       <script src="Chess/cell.js"></script>
+    </div>
+
   </body>
 </html>

@@ -45,6 +45,10 @@ li a.current {
 .sm {text-decoration: none;}
 .sm:hover{filter: invert(20%);}
 
+#chessBoard {
+  padding: 20px;
+}
+
 #yoloForm {
   background-color: #ffff00;
   width: 500px;
