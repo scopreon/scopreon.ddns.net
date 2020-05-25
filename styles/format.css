@@ -33,7 +33,6 @@ nav li a {
   font-size: 32px;
   background-color: #80ffff;
   text-decoration: none;
-
 }
 nav li a:hover:not(.current){
   background-color: #99ffff;

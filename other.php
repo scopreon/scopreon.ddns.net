@@ -13,6 +13,7 @@
       <ul class='navigation'>
         <li><a href="index.php">Home</a></li>
         <li><a href="programming.php">Programming</a></li>
+        <li><a href="Chess.php">Chess</a></li>
         <li><a class='current' href="other.html">Other</a></li>
       </ul>
     </nav>
