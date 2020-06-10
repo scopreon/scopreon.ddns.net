@@ -38,7 +38,7 @@
     <IFRAME style='display:none' name='hidden-form'></IFRAME>
   </div>
   <div id='fractalGenerator'>
-    <label><b>Generate a Julia fractal<b></label><br><br>
+    <label><b>Generate a Julia fractal</b></label><br><br>
     <input type="text" id="real" value = ""> + <input type="text" id="imaginary" value = "">i <br><br>
     <button id="fractalSubmit" onclick = setup()>Generate</button>
   </div>
