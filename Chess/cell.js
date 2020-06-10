@@ -11,6 +11,7 @@ function Cell(col,row,piece,colour,num){
   this.selected = false;
   this.attack = false;
   this.imgNum = num;
+  this.moved = false;
 }
 Cell.prototype.contains = function(mouseX,mouseY){
   if (mouseX > this.x + width/dim * 1/12 && mouseX < (this.x + width/dim * 1/12) + width/dim * 5/6){

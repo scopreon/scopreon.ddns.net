@@ -13,7 +13,6 @@ function setup(){
   var canvas = createCanvas(size,size);
   canvas.parent('chessBoard');
   grid = create2DArray(dim,dim);
-  console.log(grid);
   for(var i = 0; i < dim; i++){
     for(var j = 0; j < dim; j++){
       let piece = '';
@@ -78,6 +77,7 @@ function mousePressed(){
                   grid[i][j].piece = grid[k][l].piece;
                   grid[i][j].colour = grid[k][l].colour;
                   grid[i][j].imgNum = grid[k][l].imgNum;
+                  grid[i][j].moved = true;
                   grid[k][l] = new Cell(k,l,'',null);
                   currentTurn = 0;
                   turn = !turn;
@@ -118,6 +118,7 @@ function updateBoard(){
       else{fill(160);}
       if(grid[i][j].selected){fill(255,0,0);}
       if(grid[i][j].option){fill(0,255,0);}
+      if(!grid[i][j].moved){fill(0,0,255);}
       colour = !colour;
       rect(grid[i][j].x + width/dim * 1/12,grid[i][j].y + width/dim * 1/12,width/dim * 5/6,width/dim * 5/6,10);
       //textSize(10);
