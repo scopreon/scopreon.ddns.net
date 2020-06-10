@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Programming</title>
   <link rel="stylesheet" href="styles/format.css">
+  <script src="scripts/math.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -34,6 +36,14 @@
       <input type="submit">
     </form>
     <IFRAME style='display:none' name='hidden-form'></IFRAME>
+  </div>
+  <div id='fractalGenerator'>
+    <label><b>Generate a Julia fractal<b></label><br><br>
+    <input type="text" id="real" value = ""> + <input type="text" id="imaginary" value = "">i <br><br>
+    <button id="fractalSubmit" onclick = setup()>Generate</button>
+  </div>
+  <div id='fractal'>
+    <script src="scripts/fractal.js"></script>
   </div>
 </body>
 </html>

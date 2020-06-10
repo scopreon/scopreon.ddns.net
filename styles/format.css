@@ -49,12 +49,23 @@ li a.current {
   padding: 20px;
 }
 
+#fractal {
+  padding: 20px;
+}
+
 #yoloForm {
   background-color: #ffff00;
   width: 500px;
   margin: 20px;
   padding: 20px;
   border: 3px solid #73AD21;
+}
+#fractalGenerator {
+  background-color: #afeeee;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #ff0000;
 }
 
 #yoloForm input {
