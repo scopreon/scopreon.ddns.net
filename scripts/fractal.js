@@ -2,7 +2,7 @@ var iter = 30;
 function setup(){
   if(document.getElementById('real').value != ""){
     let c = createCanvas(700,700);
-    drawStuff(parseInt(document.getElementById('real').value),parseInt(document.getElementById('imaginary').value));
+    drawStuff(parseFloat(document.getElementById('real').value),parseFloat(document.getElementById('imaginary').value));
     document.getElementById('imaginary').value = "";
     document.getElementById('real').value = "";
     saveCanvas(c, 'myCanvas', 'jpg');
