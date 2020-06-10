@@ -118,7 +118,7 @@ function updateBoard(){
       else{fill(160);}
       if(grid[i][j].selected){fill(255,0,0);}
       if(grid[i][j].option){fill(0,255,0);}
-      if(!grid[i][j].moved){fill(0,0,255);}
+      //if(!grid[i][j].moved){fill(0,0,255);}
       colour = !colour;
       rect(grid[i][j].x + width/dim * 1/12,grid[i][j].y + width/dim * 1/12,width/dim * 5/6,width/dim * 5/6,10);
       //textSize(10);
