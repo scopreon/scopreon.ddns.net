@@ -25,6 +25,10 @@ function setup(){
     window.open('../mandelbrot.php', '_blank');
   }
   if(document.getElementById('real').value != "" && Math.abs(parseFloat(document.getElementById('imaginary').value)) < 1 && Math.abs(parseFloat(document.getElementById('real').value)) < 1){
+    vx1 = -2;
+    vy1 = -2;
+    vx2 = 2;
+    vy2 = 2;
     colorMode(HSB, iter);
     strokeWeight(4);
     stroke(0);
