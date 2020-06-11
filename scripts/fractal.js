@@ -35,6 +35,33 @@ function setup(){
   //drawStuff();
 }
 
+// function mousePressed() {
+//   drawboxX = mouseX;
+//   drawboxY = mouseY;
+//   dragging = true;
+//   console.log('clicked');
+// }
+//
+// function mouseDragged() {
+//   if (dragging) {
+//     drawStuff();
+//     rect(drawboxX, drawboxY, Math.abs(drawboxX-mouseX), Math.abs(drawboxX-mouseX));
+//   }
+//   console.log('specify');
+// }
+//
+// function mouseReleased() {
+//   dragging = false;
+//   let temp1 = vx1;
+//   let temp2 = vy1;
+//   vx1 = mapping(drawboxX,0,700,vx1,vx2);
+//   vx2 = mapping(mouseX,0,700,temp1,vx2);
+//   vy1 = mapping(drawboxY,0,700,vy1,vy2);
+//   vy2 = mapping(drawboxY + (mouseX-drawboxX),0,700,temp2,vy2);
+//   drawStuff();
+// }
+
+
 function mousePressed() {
   if(mouseX >= 0  && mouseX <= 700 && mouseY >= 0  && mouseY <= 700){
     if(started){
@@ -57,12 +84,14 @@ function mouseDragged() {
 function mouseReleased() {
   if(started && dragging){
     dragging = false;
-    vx1 = map(drawboxX,0,700,vx1,vx2);
-    vx2 = map(mouseX,0,700,vx1,vx2);
-    vy1 = map(drawboxY,0,700,vy1,vy2);
-    vy2 = map(mouseY,0,700,vy1,vy2);
-    console.log('PRINTING-----------');
-    drawStuff(cRe,cIm);
+      dragging = false;
+      let temp1 = vx1;
+      let temp2 = vy1;
+      vx1 = mapping(drawboxX,0,700,vx1,vx2);
+      vx2 = mapping(mouseX,0,700,temp1,vx2);
+      vy1 = mapping(drawboxY,0,700,vy1,vy2);
+      vy2 = mapping(drawboxY + (mouseX-drawboxX),0,700,temp2,vy2);
+      drawStuff(cRe,cIm);
   }
 }
 
