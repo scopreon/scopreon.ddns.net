@@ -22,7 +22,7 @@ window.addEventListener("beforeunload", function(e){
 
 function setup(){
   if(document.getElementById('real').value == "69"){
-    window.open('mandelbrot.php', '_blank');
+    window.open('../mandelbrot.php', '_blank');
   }
   if(document.getElementById('real').value != "" && Math.abs(parseFloat(document.getElementById('imaginary').value)) < 1 && Math.abs(parseFloat(document.getElementById('real').value)) < 1){
     colorMode(HSB, iter);
