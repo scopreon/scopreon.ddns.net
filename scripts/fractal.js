@@ -21,7 +21,10 @@ window.addEventListener("beforeunload", function(e){
 }, false);
 
 function setup(){
-  if(document.getElementById('real').value != ""){
+  if(document.getElementById('real').value == "69"){
+    window.open('mandelbrot.php', '_blank');
+  }
+  if(document.getElementById('real').value != "" && Math.abs(parseFloat(document.getElementById('imaginary').value)) < 1 && Math.abs(parseFloat(document.getElementById('real').value)) < 1){
     colorMode(HSB, iter);
     strokeWeight(4);
     stroke(0);
