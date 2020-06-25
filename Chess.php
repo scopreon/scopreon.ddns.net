@@ -8,6 +8,7 @@
   <body>
   </head>
   <body>
+
     <header>
       <div class = 'left'>
         <h1>Chess</h1>
@@ -17,7 +18,7 @@
           <ul>
             <a href = 'index.php'><li>Home</li></a>
             <a href = 'programming.php'><li>Programming</li></a>
-            <a href = 'chess.php'><li class = 'selected'>Chess</li></a>
+            <a href = 'Chess.php'><li class = 'selected'>Chess</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>
@@ -25,7 +26,7 @@
       <div class="clear"></div>
     </header>
     <div class = 'main'>
-      <div id='chessBoard'>
+      <div id='ChessBoard'>
         <script src="Chess/board.js"></script>
         <script src="Chess/cell.js"></script>
       </div>

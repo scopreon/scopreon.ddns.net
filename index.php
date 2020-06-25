@@ -14,7 +14,7 @@
           <ul>
             <a href = 'index.php'><li class = 'selected'>Home</li></a>
             <a href = 'programming.php'><li>Programming</li></a>
-            <a href = 'chess.php'><li>Chess</li></a>
+            <a href = 'Chess.php'><li>Chess</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>
