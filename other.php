@@ -15,6 +15,7 @@
             <a href = 'index.php'><li>Home</li></a>
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
+            <a href = 'blog.php'><li>Blog</li></a>
             <a href = 'other.php'><li class = 'selected'>Other</li></a>
           </ul>
         </nav>
