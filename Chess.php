@@ -26,7 +26,7 @@
       <div class="clear"></div>
     </header>
     <div class = 'main'>
-      <div id='ChessBoard'>
+      <div id='chessBoard'>
         <script src="Chess/board.js"></script>
         <script src="Chess/cell.js"></script>
       </div>
