@@ -118,7 +118,7 @@ nav a {
 
 #chessBoard{
   margin: auto;
-  width: 50%;
+  width: calc(50% - 600px);;
 }
 
 #yoloSpambot label{
