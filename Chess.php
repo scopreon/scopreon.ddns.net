@@ -1,27 +1,34 @@
-<DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Chess</title>
-    <link rel="stylesheet" href="styles/format.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div>
-      <nav>
-        <ul class='navigation'>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="programming.php">Programming</a></li>
-          <li><a class='current' href="Chess.php">Chess</a></li>
-          <li><a href="other.php">Other</a></li>
-        </ul>
-      </nav>
+  </head>
+  <body>
+    <header>
+      <div class = 'left'>
+        <h1>Chess</h1>
+      </div>
+      <div class = 'right'>
+        <nav>
+          <ul>
+            <a href = 'index.php'><li>Home</li></a>
+            <a href = 'programming.php'><li>Programming</li></a>
+            <a href = 'chess.php'><li class = 'selected'>Chess</li></a>
+            <a href = 'other.php'><li>Other</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class = 'main'>
+      <div id='chessBoard'>
+        <script src="Chess/board.js"></script>
+        <script src="Chess/cell.js"></script>
+      </div>
     </div>
-    <div style='clear:left;' id='chessBoard'>
-      <script src="Chess/board.js"></script>
-      <script src="Chess/cell.js"></script>
-    </div>
-
   </body>
 </html>

@@ -1,36 +1,39 @@
-<DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Welcome.</title>
-  <link rel="stylesheet" href="styles/format.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-  <!--navigation bar-->
-  <div>
-    <nav>
-      <ul class='navigation'>
-        <li><a class='current' href="index.php">Home</a></li>
-        <li><a href="programming.php">Programming</a></li>
-        <li><a href="Chess.php">Chess</a></li>
-        <li><a href="other.php">Other</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- about me stuff-->
-  <div style='clear:left;' id='title'>
-    <h1>Home sweet home</h1>
-    <p>Website kinda just for any stuff I wanna share mainly just <a href="programming.php">programming</a> and random stuff</p>
-  </div>
-  <div class='social_media'>
-    <a href="https://github.com/scopreon"><img class='sm' alt='Github' src="images/github.png"
-      width='50' height='50'></a>
-    <a href="https://www.reddit.com/user/scopreon"><img class='sm' alt='Reddit' src="images/reddit.png"
-      width='50' height='50'></a>
-    <a href="https://twitter.com/QuarBoredBot"><img class='sm' alt='Twitter' src="images/twitter.png"
-      width='50' height='50'></a>
-  </div>
-  <script src="scripts/main.js"></script>
-</body>
+  <head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class = 'left'>
+        <h1>Home</h1>
+      </div>
+      <div class = 'right'>
+        <nav>
+          <ul>
+            <a href = 'index.php'><li class = 'selected'>Home</li></a>
+            <a href = 'programming.php'><li>Programming</li></a>
+            <a href = 'chess.php'><li>Chess</li></a>
+            <a href = 'other.php'><li>Other</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class = 'main'>
+      <h2>Welcome I guess :)</h2>
+      <br>
+      <p>This is where I am going to be putting some of my coding projects and some random stuff.<br>
+      I normally do random small projects but I am working on a larger project over the summer which I will put in 'Other'.</p>
+      <div class='social_media'>
+        <a href="https://github.com/scopreon"><img class='sm' alt='Github' src="images/github.png"
+          width='50' height='50'></a>
+        <a href="https://www.reddit.com/user/scopreon"><img class='sm' alt='Reddit' src="images/reddit.png"
+          width='50' height='50'></a>
+        <a href="https://twitter.com/QuarBoredBot"><img class='sm' alt='Twitter' src="images/twitter.png"
+          width='50' height='50'></a>
+      </div>
+    </div>
+  </body>
 </html>

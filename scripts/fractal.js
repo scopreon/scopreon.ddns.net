@@ -32,7 +32,8 @@ function setup(){
     colorMode(HSB, iter);
     strokeWeight(4);
     stroke(0);
-    let c = createCanvas(700,700);
+    let c = createCanvas(Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2));
+    c.parent('fractal');
     started = true;
     drawStuff(parseFloat(document.getElementById('real').value),parseFloat(document.getElementById('imaginary').value));
     document.getElementById('imaginary').value = "";
@@ -61,16 +62,16 @@ function setup(){
 //   dragging = false;
 //   let temp1 = vx1;
 //   let temp2 = vy1;
-//   vx1 = mapping(drawboxX,0,700,vx1,vx2);
-//   vx2 = mapping(mouseX,0,700,temp1,vx2);
-//   vy1 = mapping(drawboxY,0,700,vy1,vy2);
-//   vy2 = mapping(drawboxY + (mouseX-drawboxX),0,700,temp2,vy2);
+//   vx1 = mapping(drawboxX,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vx1,vx2);
+//   vx2 = mapping(mouseX,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),temp1,vx2);
+//   vy1 = mapping(drawboxY,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vy1,vy2);
+//   vy2 = mapping(drawboxY + (mouseX-drawboxX),0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),temp2,vy2);
 //   drawStuff();
 // }
 
 
 function mousePressed() {
-  if(mouseX >= 0  && mouseX <= 700 && mouseY >= 0  && mouseY <= 700){
+  if(mouseX >= 0  && mouseX <= Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2) && mouseY >= 0  && mouseY <= Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2)){
     if(started){
       drawboxX = mouseX;
       drawboxY = mouseY;
@@ -94,10 +95,10 @@ function mouseReleased() {
       dragging = false;
       let temp1 = vx1;
       let temp2 = vy1;
-      vx1 = mapping(drawboxX,0,700,vx1,vx2);
-      vx2 = mapping(mouseX,0,700,temp1,vx2);
-      vy1 = mapping(drawboxY,0,700,vy1,vy2);
-      vy2 = mapping(drawboxY + (mouseX-drawboxX),0,700,temp2,vy2);
+      vx1 = mapping(drawboxX,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vx1,vx2);
+      vx2 = mapping(mouseX,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),temp1,vx2);
+      vy1 = mapping(drawboxY,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vy1,vy2);
+      vy2 = mapping(drawboxY + (mouseX-drawboxX),0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),temp2,vy2);
       drawStuff(cRe,cIm);
   }
 }
@@ -115,9 +116,9 @@ function drawStuff(a,b){
   var initialIm = currentY;
   var prevRe = 1000;
   var prevIm = 1000;
-  for(var x = 0; x < 701;x+= 1){
-    for(var y = 0; y < 701;y+=1){
-      a = new Complex(mapping(x,0,700,vx1,vx2),mapping(y,0,700,vy1,vy2));
+  for(var x = 0; x < Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2)+1;x+= 1){
+    for(var y = 0; y < Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2)+1;y+=1){
+      a = new Complex(mapping(x,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vx1,vx2),mapping(y,0,Math.floor(document.getElementById('fractalGenerator').offsetWidth/1.2),vy1,vy2));
       for(var i = 0; i < iter; i++){
         a = (a.mult(a));
         a.re += cRe;
