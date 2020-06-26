@@ -24,7 +24,7 @@
       <div class="clear"></div>
     </header>
     <div class = 'main'>
-      <h2>Welcome I guess :)</h2>
+      <h2 id = 'welcomeBack'>Welcome</h2>
       <br>
       <p>This is where I am going to be putting some of my coding projects and some random stuff.<br>
       I normally do random small projects but I am working on a larger project over the summer which I will put in 'Other'.</p>
