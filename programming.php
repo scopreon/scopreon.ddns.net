@@ -42,7 +42,7 @@
       </div>
       <div id = 'fractalGenerator'>
         <h5>Julia fractal generator</h5>
-        <input type="text" id="real" value = ""> + <input type="text" id="imaginary" value = "">i
+        <input type="number" id="real" min="-1" max="1"> + <input type="number" id="imaginary" min="-1" max="1">i
         <button id="fractalSubmit" onclick = setup()>Generate</button>
         <div id='fractal'>
           <script src="scripts/fractal.js"></script>

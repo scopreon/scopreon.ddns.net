@@ -3,6 +3,7 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   </head>
   <body>
     <header>
@@ -36,5 +37,6 @@
           width='50' height='50'></a>
       </div>
     </div>
+    <script src = "scripts/scripts.js"></script>
   </body>
 </html>
