@@ -7,7 +7,7 @@
   <body>
     <header>
       <div class = 'left'>
-        <h1>Blog</h1>
+        <h1>Other</h1>
       </div>
       <div class = 'right'>
         <nav>
@@ -15,19 +15,21 @@
             <a href = 'index.php'><li>Home</li></a>
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
-            <a href = 'blog.php'><li class = 'selected'>Blog</li></a>
-            <a href = 'messenger.php'><li>Messenger</li></a>
+            <a href = 'blog.php'><li>Blog</li></a>
+            <a href = 'messenger.php'><li class = 'selected'>Messenger</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>
       </div>
       <div class="clear"></div>
     </header>
-    <div class = 'main'>
-      <h2>My Blog</h2>
-      <br>
-      <p>My blog 1<br>
-      My blog 2</p>
-    </div>
+    <container class = 'centreContainer'>
+      <div id = 'login'>
+        <form>
+          <h2>Login</h2>
+        </form>
+        <IFRAME style='display:none' name='hidden-form'></IFRAME>
+      </div>
+    </container>
   </body>
 </html>
