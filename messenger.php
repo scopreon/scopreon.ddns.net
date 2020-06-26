@@ -7,7 +7,7 @@
   <body>
     <header>
       <div class = 'left'>
-        <h1>Other</h1>
+        <h1>Messenger</h1>
       </div>
       <div class = 'right'>
         <nav>
@@ -16,7 +16,7 @@
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
             <a href = 'blog.php'><li>Blog</li></a>
-            <a href = 'messenger.php'><li class = 'selected'>Messenger</li></a>
+            <a href = 'messenger.php'><li class = 'selected'>Messenger (alpha)</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>
@@ -27,6 +27,12 @@
       <div id = 'login'>
         <form>
           <h2>Login</h2>
+          <label>Username</label>
+          <input type = 'text'>
+          <label>Password</label>
+          <input type = 'password'><br>
+          <label id = 'forgotPassword'>Forgot password?</label>
+          <input type="submit" value = 'Login'>
         </form>
         <IFRAME style='display:none' name='hidden-form'></IFRAME>
       </div>

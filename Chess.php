@@ -20,7 +20,7 @@
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li class = 'selected'>Chess</li></a>
             <a href = 'blog.php'><li>Blog</li></a>
-            <a href = 'messenger.php'><li>Messenger (alpha)/li></a>
+            <a href = 'messenger.php'><li>Messenger (alpha)</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>

@@ -219,15 +219,63 @@ nav a {
   align-items: center;
   justify-content: center;
   height:50%;
-  width:25%;
+  width:30%;
   background: #cccccc;
 }
 
 #login form{
-  text-align: center;
   margin: auto;
-  padding:10%;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:5%;
   height:90%;
   width:90%;
   background:white;
+
+}
+
+
+#login form input{
+  border-style: solid;
+  border-radius: 20px;
+  width:70%;
+  padding-left: 2%;
+  height: 10%;
+  border-color: black;
+  transition:0.2s;
+}
+
+#login form input[type = 'submit']{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  transition:0.3s;
+}
+
+#login form input[type = 'submit']:hover{
+  background: #999999;
+}
+
+#login form input:focus{
+  border-color: blue;
+  border-width: 2px;
+  width:80%;
+}
+
+#login form label{
+  display: block;
+  padding-top: 10%;
+}
+
+#forgotPassword{
+  font-size: 12px;
+  padding-top: 1% !important;
+  text-decoration: underline;
+  color: blue;
+}
+
+#login form h2{
+  width: 100%;
+  text-align:center;
 }
