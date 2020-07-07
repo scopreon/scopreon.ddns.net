@@ -29,7 +29,7 @@ data = data.replace("messagetosend",sys.argv[3])
 
 
 
-for x in range(0,number_of_times):
+for t in range(0,number_of_times):
   x = requests.post(url[:19]+url[21:31]+'/message', headers=headers, cookies=cookies, data=data)
   if str(x.status_code) != '200':
     sys.exit()
