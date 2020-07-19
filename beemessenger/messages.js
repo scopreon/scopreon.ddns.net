@@ -86,11 +86,11 @@ function get_message(str){
   xmlhttp.send();
 }
 
-// if ( document.URL.includes("messageuser.php") ) {
-//   var id = setInterval('get_message();', 1000);
-// }else{
-//   clearInterval(id);
-// }
+if ( document.URL.includes("messageuser.php") ) {
+  var id = setInterval('get_message();', 1000);
+}else{
+  clearInterval(id);
+}
 
 
 get_users();
