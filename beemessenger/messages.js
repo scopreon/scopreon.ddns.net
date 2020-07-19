@@ -48,6 +48,7 @@ function get_users(){
 }
 
 function get_message(str){
+
   document.getElementById('messagesList').innerHTML = "";
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -81,6 +82,8 @@ function get_message(str){
         }
       }
     }
+    var element = document.getElementById("messagesList");
+    element.scrollTop = element.scrollHeight;
   };
   xmlhttp.open("GET","list_messages_of_users.php?q="+str,true);
   xmlhttp.send();
