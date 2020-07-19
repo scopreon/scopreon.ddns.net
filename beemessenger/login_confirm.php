@@ -9,11 +9,10 @@
 
   if ($result->num_rows > 0) {
       // output data of each row
-      echo 'valid login';
       $_SESSION['username'] = $username;
+      header( "Location: index.php" );
+      exit ;
   } else {
-      echo 'invalid login';
+      echo 'there was a problem signing in';
   }
 ?>
-<br>
-return to <a href='index.php'>home</a>

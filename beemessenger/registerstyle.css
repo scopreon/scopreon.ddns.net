@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://pyxis.nymag.com/v1/imgs/e06/4aa/f4afcaeedf9340ddf37323bb12aadc7f11-01-ya-like-jazz.rsquare.w330.jpg');
+}
+
+.formvalidator {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9fafb;
+  padding-top: 0px;
+  min-height: 50vh;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  overflow:auto;
+}
+
+#messages {
+  width: 700px !important;
+  height: 800px !important;
+}
+
+
+#messageBox{
+  width:auto;
+  float:right;
+  width: 70%;
+  margin-right:2%;
+}
+
+#messageBox input[type='text']{
+  width:80%;
+}
+
+#message {
+  margin-left:10px;
+  margin-right: 10px;
+  clear:both;
+  width:50%;
+  margin-top: 2px;;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+p.right {
+  /* text-align: right; */
+  float:right;
+  background-color: #ffb101;
+}
+
+p.left {
+  /* text-align: left; */
+  float: left;
+  background-color: black;
+  color: white;
+}
+
+.register {
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 0 0 20px;
+  color: #ffba33;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #ffba33;
+  border: 2px solid #ffba33;
+  border-radius: 4px;
+  font-size: 15px;
+  color: black;
+  font-weight: bolder;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  transition:.3s;
+}
+
+.hover:hover{
+  font-size: 20px;
+}
+footer {
+  position: relative;
+  text-align: center;
+}
+
+a {
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: yellow;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 140px;
+  overflow: hidden;
+  background-color: #ffba33;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #ffba33;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #f5a142;
+}
+#mainMessenger {
+  width:100%;
+}
+#messagesList {
+  width: 70%;
+  float:right;
+  height:85%;
+  border-style: solid;
+  border-color: grey;
+  margin:2%;
+  overflow-y: scroll;
+}
+#selectContact{
+  width: 22%;
+  float:left;
+  height:90%;
+  background:yellow;
+  margin:2%;
+}
