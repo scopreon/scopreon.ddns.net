@@ -21,7 +21,7 @@
       <div id='mainMessenger'>
         <div id='selectContact'>
           <form>
-            <select id="users" onchange="get_message(this.value)">
+            <select id="users" onchange="document.getElementById('messagesList').innerHTML=``;get_message(this.value)">
               <option value="">Select a person:</option>
             </select>
           </form>

@@ -147,7 +147,6 @@ function get_users(){
 }
 
 function get_message(str){
-
   length=document.getElementById('messagesList').childElementCount;
   console.log(length);
   var xmlhttp = new XMLHttpRequest();
