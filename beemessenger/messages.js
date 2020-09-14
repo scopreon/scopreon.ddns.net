@@ -65,7 +65,7 @@ function get_message(str){
       });
       if(messagesArray[0].length/3 != length){
         messagesArray=messagesArray[0]
-        for(var i = length;i < messagesArray.length/3;i++){
+        for(var i = 0;i < messagesArray.length/3;i++){
           var para = document.createElement("p");
           var node = document.createTextNode(messagesArray[i*3+2]);
           para.appendChild(node);
@@ -86,7 +86,7 @@ function get_message(str){
     }
     var element = document.getElementById("messagesList");
   };
-  xmlhttp.open("GET","list_messages_of_users.php?q="+str,true);
+  xmlhttp.open("GET","list_messages_of_users.php?q="+str+'&l='+length,true);
   xmlhttp.send();
 }
 

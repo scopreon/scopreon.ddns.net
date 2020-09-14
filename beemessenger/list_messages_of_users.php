@@ -2,6 +2,7 @@
   session_start();
   include 'test.php';
   $contact = $_GET['q'];
+  $length = $_GET['l'];
   if($contact == 'undefined'){
     $contact=$_SESSION['message_viewing'];
   }
@@ -10,7 +11,7 @@
   }
 
   $username = $_SESSION['username'];
-  $sql = "SELECT * FROM messenger.messages WHERE (`sender` = '$username' AND `reciever` = '$contact') OR (`sender` = '$contact' AND `reciever` = '$username')";
+  $sql = "SELECT * FROM messenger.messages WHERE (`sender` = '$username' AND `reciever` = '$contact') OR (`sender` = '$contact' AND `reciever` = '$username') LIMIT 18446744073709551610 OFFSET $length ";
 
 
   $result = $conn->query($sql);
