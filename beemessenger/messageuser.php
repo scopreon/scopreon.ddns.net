@@ -19,6 +19,12 @@
     <div class='container' id='messages'>
       <label id='name'><?php session_start();echo 'Hello '.$_SESSION['username'];?></label>
       <div id='mainMessenger'>
+        <div id='newConvo'>
+          <form action="new_convo.php" method="post" target="hidden-form">
+            User: <input autocomplete="false" type="text" name="username"><br>
+            <input type="submit" value = 'message'>
+          </form>
+        </div>
         <div id='selectContact'>
           <form>
             <select id="users" onchange="document.getElementById('messagesList').innerHTML=``;get_message(this.value)">
