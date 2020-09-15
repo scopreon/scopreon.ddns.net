@@ -184,7 +184,7 @@ nav li a:hover {
 #messagesList {
   width: 70%;
   float:right;
-  height:85%;
+  height:75%;
   border-style: solid;
   border-color: grey;
   margin:2%;
@@ -193,7 +193,7 @@ nav li a:hover {
 #selectContact{
   width: 22%;
   float:left;
-  height:90%;
+  height:75%;
   background:yellow;
   margin:2%;
 }
