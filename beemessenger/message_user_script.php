@@ -2,7 +2,7 @@
 session_start();
 include 'test.php';
 $username = $_SESSION['message_viewing'];
-$message = $_POST['message'];
+$message = str_replace('\'','',$_POST['message']);
 $currentuser = $_SESSION['username'];
 $time = date("Y-m-d h:i:s");
 $sql = "SELECT * FROM messenger.user_data WHERE `username` = '$username'";
