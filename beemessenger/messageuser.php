@@ -21,7 +21,7 @@
       <div id='mainMessenger'>
         <div id='newConvo'>
           <form action="new_convo.php" method="post" target="hidden-form">
-            User: <input autocomplete="false" type="text" name="username"><br>
+             Message new user: <input autocomplete="false" type="text" name="username"><br>
             <input type="submit" value = 'message'>
           </form>
         </div>
