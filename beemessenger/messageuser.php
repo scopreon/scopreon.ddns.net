@@ -41,9 +41,9 @@
       </div>
       <div id="messagesList"></div>
       <div id='messageBox'>
-        <form action="message_user_script.php" method="post" target="hidden-form">
-          Message: <input autocomplete="false" type="text" name="message"><br>
-          <input type="submit" value = 'message'>
+        <form action="message_user_script.php" method="post" target="hidden-form" id='myForm'>
+          Message: <input autocomplete="false" type="text" name="message" id='messageBoxText'><br>
+          <button type="button" id='buttonToClick' onclick="myFunc();">Submit</button>
         </form>
       </div>
       <IFRAME style='display:none' name='hidden-form'></IFRAME>

@@ -102,6 +102,20 @@ if ( document.URL.includes("messageuser.php") ) {
 
 get_users();
 
+function myFunc(){
+  document.getElementById("myForm").submit();
+  document.getElementById("messageBoxText").value='';
+}
+
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      document.getElementById("buttonToClick").click();
+      return false;
+    }
+  });
+});
 // function test(){
 //   var myTableArray = [];
 //   $("table#table_of_users tr").each(function() {
