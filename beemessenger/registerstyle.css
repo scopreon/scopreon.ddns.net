@@ -18,7 +18,7 @@ body {
 .container {
   margin: 10px auto;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 400px;
   overflow:auto;
@@ -26,7 +26,7 @@ body {
 
 #messages {
   width: 700px !important;
-  height: 800px !important;
+  height: 850px !important;
 }
 
 
@@ -184,16 +184,35 @@ nav li a:hover {
 #messagesList {
   width: 70%;
   float:right;
-  height:75%;
+  height:70%;
   border-style: solid;
   border-color: grey;
   margin:2%;
   overflow-y: scroll;
+  background-color: #eeeeee;
 }
 #selectContact{
   width: 22%;
   float:left;
   height:75%;
-  background:yellow;
-  margin:2%;
+  margin-left:3%;
+}
+
+#newConvo{
+  font-size: 25px;
+  font-weight: bold;
+  margin:5px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: #ffba33;
+  border-radius: 25px;
+  padding-left: 30px !important;
+}
+
+#name{
+  display: inline-block;
+  padding:10px;
+  margin:5px;
+  background-color: #ffba33;
+  border-radius: 25px;
 }

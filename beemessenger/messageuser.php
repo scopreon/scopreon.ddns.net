@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="registerstyle.css">
     <title>Login 🐝</title>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="messageuserstyle.css">
   </head>
   <body class="formvalidator">
     <nav>
@@ -17,23 +18,28 @@
       </ul>
     </nav>
     <div class='container' id='messages'>
-      <label id='name'><?php session_start();echo 'Hello '.$_SESSION['username'];?></label>
       <div id='mainMessenger'>
+        <label id='name'><?php session_start();echo 'Hello '.$_SESSION['username'];?></label>
         <div id='newConvo'>
           <form action="new_convo.php" method="post" target="hidden-form">
-             Message new user: <input autocomplete="false" type="text" name="username"><br>
+             Message new user: <input autocomplete="false" type="text" name="username">
             <input type="submit" value = 'message'>
           </form>
         </div>
+
+        <!---  new select box added at the top -->
+
+
         <div id='selectContact'>
-          <form>
-            <select id="users" onchange="document.getElementById('messagesList').innerHTML=``;get_message(this.value)">
-              <option value="">Select a person:</option>
-            </select>
-          </form>
+          <div class="container1">
+            <div class="dropdown">
+              <div class="caption">Contacts</div>
+                <div class="list"></div>
+              </div>
+          </div>
         </div>
       </div>
-      <div id="messagesList"><b>Person info will be listed here...</b></div>
+      <div id="messagesList"></div>
       <div id='messageBox'>
         <form action="message_user_script.php" method="post" target="hidden-form">
           Message: <input autocomplete="false" type="text" name="message"><br>
@@ -43,5 +49,6 @@
       <IFRAME style='display:none' name='hidden-form'></IFRAME>
     </div>
     <script src="messages.js"></script>
+    <script src="messagedropdown.js" charset="utf-8"></script>
   </body>
 </html>
