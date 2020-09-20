@@ -26,6 +26,7 @@
 .dropdown>.list>.item {
     padding: 11px 24px;
     cursor: pointer;
+    word-wrap: break-word;
 }
 
 .dropdown>.list>.item.selected {
