@@ -34,8 +34,8 @@
    At the start of the summer 2020; together with my friend @zackylippy we gave life to
    this beautiful piece of art.<br><br> With over a whoping 20 active daily users the community is growing
   at an unforseeable rate.<br><br> Please make an account and add your friends with ease,
-  although desktop/laptop use is heavily recommended for current use.<br><br> Please me on reddit
- at the username scopreon for any bug reports.<br><br> All code is my own.</label>
+  although desktop/laptop use is heavily recommended for current use.<br><br> Please message me on reddit
+ at the username scopreon for any bug reports.<br><br> All code is my own.<br><br>Goodbye.</label>
   </div>
 
 </body>
