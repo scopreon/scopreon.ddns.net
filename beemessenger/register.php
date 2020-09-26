@@ -12,10 +12,10 @@
 <body class='formvalidator'>
   <nav>
     <ul>
+      <li><img src="BeeLogo.png" height="75px" style="margin-top: 4px; display: block;  right:0;"></li>
       <li><a href='index.php'>Home <br> <img src="https://cdn2.iconfinder.com/data/icons/bee-farm-filled/64/bee_farm-04-512.png" width="30px"></a></li>
       <li><a href='login.php'>Login <br><img src="https://image.flaticon.com/icons/png/512/152/152533.png" height="30px"></img></a></li>
       <li><a href='register.php'>Register <br> <img src="https://simpleicon.com/wp-content/uploads/add-user.png" height="30px"></a></li>
-      <li><img src="BeeLogo.png" height="75px" style="margin-top: 4px; display: inline-block; position:absolute; right:0;"></li>
     </ul>
   </nav>
 

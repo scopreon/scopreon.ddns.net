@@ -1,6 +1,5 @@
 
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +12,7 @@
 <body class="formvalidator">
   <nav>
     <ul>
+      <li><img src="BeeLogo.png" height="75px" style="margin-top: 4px; display: block; right:0;"></li>
       <li><a href='index.php'>Home <br> <img src="https://cdn2.iconfinder.com/data/icons/bee-farm-filled/64/bee_farm-04-512.png" width="30px"></a></li>
       <?php
         session_start();
@@ -25,12 +25,17 @@
           echo "<li><a href='register.php'>Register <br> <img src='https://simpleicon.com/wp-content/uploads/add-user.png' height='30px'></a></li>";
         }
       ?>
-      <li><img src="BeeLogo.png" height="75px" style="margin-top: 4px; display: inline-block; position:absolute; right:0;"></li>
     </ul>
   </nav>
 
   <div class="container">
-    <label>Welcome to bee messenger</label>
+    <label id='homelabel'><b>Welcome to beemessenger 1.0</b><br>
+    A social media like no other - built from the ground up on the phrase 'ya like jazz'.
+   At the start of the summer 2020; together with my friend @zackylippy we gave life to
+   this beautiful piece of art.<br><br> With over a whoping 20 active daily users the community is growing
+  at an unforseeable rate.<br><br> Please make an account and add your friends with ease,
+  although desktop/laptop use is heavily recommended for current use.<br><br> Please me on reddit
+ at the username scopreon for any bug reports.<br><br> All code is my own.</label>
   </div>
 
 </body>
