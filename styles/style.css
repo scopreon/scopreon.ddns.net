@@ -232,7 +232,7 @@ nav a {
     padding:22px;
   }
   nav ul li:hover:not(.selected){
-    font-size: 12px;
+    font-size: 35px;
   }
   nav{
     display:none;
