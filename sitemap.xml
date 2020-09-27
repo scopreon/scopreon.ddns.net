@@ -8,39 +8,49 @@
 
 
 <url>
-  <loc>http://scopreon.ddns.net/</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/index.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/index.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/programming.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/programming.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/Chess.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/Chess.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/blog.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/blog.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/messenger.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/beemessenger/index.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://scopreon.ddns.net/other.php</loc>
-  <lastmod>2020-07-09T21:41:34+00:00</lastmod>
+  <loc>https://scopreon.net/other.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scopreon.net/beemessenger/login.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://scopreon.net/beemessenger/register.php</loc>
+  <lastmod>2020-09-27T15:10:26+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
