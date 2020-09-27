@@ -75,6 +75,7 @@ nav ul {
 }
 
 nav{
+  visibility: visible;
   display: block;
 }
 
@@ -233,14 +234,20 @@ nav a {
     transition: 0.5s;
     font-size: 30px;
     margin: 8px;
-    padding:22px;
+    padding: 22px;
   }
   nav ul li:hover:not(.selected){
     font-size: 35px;
   }
   nav{
-    display:none;
+    display:flex;
   }
+
+  nav ul{
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
   #buttonnav{
     display:block;
   }

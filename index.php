@@ -19,7 +19,7 @@
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
             <a href = 'blog.php'><li>Blog</li></a>
-            <a href = 'beemessenger/index.php'><li id='beemessenger'>Messenger (alpha)</li></a>
+            <a href = 'beemessenger/index.php'><li id='beemessenger'>Messenger</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
         </nav>

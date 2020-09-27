@@ -11,14 +11,14 @@
         <h1>Other</h1>
       </div>
       <div class = 'right'>
-        <label id='buttonnav'><img src='https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png' height='30px'; display= block;></label>
+        <label id='buttonnav'><img src='https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png' display= block;></label>
         <nav>
           <ul>
             <a href = 'index.php'><li>Home</li></a>
             <a href = 'programming.php'><li>Programming</li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
             <a href = 'blog.php'><li>Blog</li></a>
-            <a href = 'beemessenger/index.php'><li id='beemessenger'>Messenger (alpha)</li></a>
+            <a href = 'beemessenger/index.php'><li id='beemessenger'>Messenger</li></a>
             <a href = 'other.php'><li class = 'selected'>Other</li></a>
           </ul>
         </nav>
