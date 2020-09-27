@@ -71,7 +71,7 @@ nav ul {
   margin: 0;
   padding: 0;
   padding-right:20px;
-  list-style: none;
+  /*list-style: none;*/
 }
 
 nav ul li {
@@ -90,6 +90,9 @@ nav ul li:hover:not(.selected){
   font-size: 20px;
 }
 
+#beemessenger:hover:not(.selected){
+  background:#ffba33 !important;
+}
 nav a {
   text-decoration: none;
   font-size: 14px;
@@ -187,6 +190,13 @@ nav a {
   padding: 10px;
 }
 
+#buttonnav{
+  display:block;
+  float:right;
+  padding:10px;
+  display: none;
+}
+
 #yoloForm input[type = Number]:focus{
   width: 25%;
   height: 30px;
@@ -213,69 +223,21 @@ nav a {
   background:#ADD8E6;
 }
 
-#login{
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:500px;
-  width:700px;
-  background: #cccccc;
-}
-
-#login form{
-  margin: auto;
-  padding-left:10%;
-  padding-right:10%;
-  padding-top:5%;
-  height:90%;
-  width:90%;
-  background:white;
-
-}
-
-
-#login form input{
-  border-style: solid;
-  border-radius: 20px;
-  width:70%;
-  padding-left: 2%;
-  height: 10%;
-  border-color: black;
-  transition:0.2s;
-}
-
-#login form input[type = 'submit']{
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
-  transition:0.3s;
-}
-
-#login form input[type = 'submit']:hover{
-  background: #999999;
-}
-
-#login form input:focus{
-  border-color: blue;
-  border-width: 2px;
-  width:80%;
-}
-
-#login form label{
-  display: block;
-  padding-top: 10%;
-}
-
-#forgotPassword{
-  font-size: 12px;
-  padding-top: 1% !important;
-  text-decoration: underline;
-  color: blue;
-}
-
-#login form h2{
-  width: 100%;
-  text-align:center;
+@media (max-width: 1090px) {
+  nav ul li {
+    display: flex;
+    transition: 0.5s;
+    font-size: 10px;
+    margin: 8px;
+    padding:22px;
+  }
+  nav ul li:hover:not(.selected){
+    font-size: 12px;
+  }
+  nav{
+    display:none;
+  }
+  #buttonnav{
+    display:block;
+  }
 }
