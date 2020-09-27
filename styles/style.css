@@ -74,6 +74,10 @@ nav ul {
   /*list-style: none;*/
 }
 
+nav{
+  display: block;
+}
+
 nav ul li {
   display: inline-block;
   font-size: 15px;
@@ -239,5 +243,8 @@ nav a {
   }
   #buttonnav{
     display:block;
+  }
+  #buttonnav img{
+    height:50px;
   }
 }
