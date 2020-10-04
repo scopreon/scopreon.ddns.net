@@ -4,7 +4,7 @@ include 'test.php';
 $message_user = $_POST['username'];
 $currentuser = $_SESSION['username'];
 $time = date("Y-m-d h:i:s");
-$message = 'Nyello world';
+$message = 'Ya like jazz?';
 $sql = "SELECT * FROM messenger.user_data WHERE `username` = '$message_user'";
 
 $result = $conn->query($sql);

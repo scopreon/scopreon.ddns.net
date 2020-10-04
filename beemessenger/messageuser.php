@@ -2,9 +2,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://freeiconshop.com/wp-content/uploads/edd/documents-outline.png" />
+    <link rel="shortcut icon" type="image/png" href="https://pbs.twimg.com/profile_images/666015590155468800/PYdlf_Ki.png" />
     <link rel="stylesheet" href="registerstyle.css">
-    <title>Login 🐝</title>
+    <title>Messages ✉️</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="messageuserstyle.css">
   </head>
@@ -22,13 +22,10 @@
         <label id='name'><?php session_start();echo 'Hello '.$_SESSION['username'];?></label>
         <div id='newConvo'>
           <form action="new_convo.php" method="post" target="hidden-form">
-             Message new user: <input autocomplete="false" type="text" name="username">
-            <input type="submit" value = 'message'>
+             Add contact: <input autocomplete="false" id="inputnewcontact" type="text" name="username">
+            <input type="submit" style="height:28px" value = 'Add'>
           </form>
         </div>
-
-        <!---  new select box added at the top -->
-
 
         <div id='selectContact'>
           <div class="container1">
@@ -42,13 +39,14 @@
       <div id="messagesList"></div>
       <div id='messageBox'>
         <form action="message_user_script.php" method="post" target="hidden-form" id='myForm'>
-          Message: <input autocomplete="false" type="text" name="message" id='messageBoxText'><br>
-          <button type="button" id='buttonToClick' onclick="myFunc();">Submit</button>
+          <input autocomplete="false" type="text" name="message" id='messageBoxText' style="height:40px;width:87.5%;display: inline;font-size:15px;float:left;outline: 2px solid black;">
+          <button type="button" id='buttonToClick' onclick="myFunc();" style="height:40px;width:12.5%;display: inline;outline: 2px solid black;"><img src="https://i.pinimg.com/originals/6c/67/20/6c67204787e94850b2635ae5e4db4923.png" height="100%"></button>
         </form>
+        <button type="button" name="beemoviescript"><a href="beemovie.txt" class="beemoviescript">I need inspiration!</a></button>
       </div>
       <IFRAME style='display:none' name='hidden-form'></IFRAME>
     </div>
     <script src="messages.js"></script>
-    <script src="messagedropdown.js" charset="utf-8"></script>
+    <script src="messagedropdown.js"></script>
   </body>
 </html>
