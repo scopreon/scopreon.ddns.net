@@ -1,4 +1,4 @@
-document.getElementById('button').addEventListener("click", get_data(){
+document.getElementById('button').addEventListener("click", function(){
   console.log('works?');
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
