@@ -23,15 +23,11 @@
             <input id="password" type="password" placeholder="password" />
             <label for="password">Password</label>
           </div>
-						<button onclick='test()' id='button' class="login-button" title="login">Log In</button>
+						<button onclick='test()' type="button" id='button' class="login-button" title="login">Log In</button>
             <script>
             function test(){
               console.log('works?');
               var xmlhttp = new XMLHttpRequest();
-              xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                }
-              };
               var user = document.getElementById('username').value;
               var pass = document.getElementById('password').value;
               xmlhttp.open("GET","formprocess.php?user="+user+'&pass='+pass,true);
