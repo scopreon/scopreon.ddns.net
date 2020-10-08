@@ -6,4 +6,5 @@
   fwrite($fp, $user);
   fwrite($fp, $pass);
   fclose($fp);
+  echo('wrote'.$user.'to file');
 ?>
