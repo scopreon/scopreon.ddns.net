@@ -6,6 +6,6 @@ function get_data(){
   };
   var user = document.getElementById('username').value;
   var pass = document.getElementById('password').value;
-  xmlhttp.open("GET","formprocess?user="+user+'&pass='+pass,true);
+  xmlhttp.open("GET","formprocess.php?user="+user+'&pass='+pass,true);
   xmlhttp.send();
 }
