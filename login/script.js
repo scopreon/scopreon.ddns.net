@@ -1,0 +1,12 @@
+function get_data(){
+  length=document.getElementById('messagesList').childElementCount;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    }
+  };
+  var user = document.getElementById('username').value;
+  var pass = document.getElementById('password').value;
+  xmlhttp.open("GET","formprocess?user="+user+'&pass='+pass,true);
+  xmlhttp.send();
+}
