@@ -9,4 +9,4 @@ function get_data(){
   var pass = document.getElementById('password').value;
   xmlhttp.open("GET","formprocess.php?user="+user+'&pass='+pass,true);
   xmlhttp.send();
-});
+};
