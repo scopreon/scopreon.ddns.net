@@ -1,4 +1,4 @@
-function get_data(){
+document.getElementById('button').addEventListener("click", get_data(){
   console.log('works?');
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -9,4 +9,4 @@ function get_data(){
   var pass = document.getElementById('password').value;
   xmlhttp.open("GET","formprocess.php?user="+user+'&pass='+pass,true);
   xmlhttp.send();
-}
+});
