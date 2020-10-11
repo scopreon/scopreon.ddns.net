@@ -7,7 +7,7 @@
 
   $result = $conn->query($sql);
 
-  if ($result->num_rows > 0) {
+  if ($result->num_rows > 0 || $username='') {
       // output data of each row
       $_SESSION['username'] = $username;
       header( "Location: index.php" );
