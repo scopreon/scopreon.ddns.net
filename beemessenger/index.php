@@ -51,17 +51,11 @@
   <div class="containerleft">
       <label id='currentusers'>Current users: <br> <span class="numbers">
           <?php
-          error_reporting(E_ERROR);
-          $ignore_errors = true;
           session_start();
           include 'test.php';
-          if ($conn->connect_error) {
-              echo "";
-          } else {
-              $full_table = mysql_query("SELECT * FROM messenger.user_data", $link);
-              $num_users = mysql_num_rows($full_table);
-              echo "$num_users";
-          }
+          $sql = "SELECT * FROM messenger.user_data";
+          $result = $conn->query($sql);
+          echo $result->num_rows;
            ?>
       </span></label>
   </div>
