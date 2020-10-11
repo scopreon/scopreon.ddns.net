@@ -15,12 +15,10 @@
     <ul>
         <li class="beelogo"><img src="BeeLogo.png" height="75px" class="logo" style="margin-top: 4px; display: block; right:0;"></li>
         <div class="navtop">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbutton">
-                <i class="fas fa-bars"></i>
-            </label>
             <li><a href='index.php' class="homelink1">Home <br> <img src="https://cdn2.iconfinder.com/data/icons/bee-farm-filled/64/bee_farm-04-512.png" width="30px"></a></li>
             <?php
+            error_reporting(E_ERROR);
+            // ^ to stop me from getting those errors
               session_start() ;
               if(isset($_SESSION['username'])){
                 echo "<li><a href='messageuser.php'>Message <br> <img src='https://cdn1.iconfinder.com/data/icons/feather-2/24/message-square-512.png' height='30px'></a></li>";
@@ -44,18 +42,39 @@
      ?></label>
     <div class="container">
       <label id='homelabel'><b>🐝 Welcome to Bee Messenger 🐝</b><br><br>
-      The greatest new social media website of 2020 - built from scratch from the phrase 'ya like jazz'.
+      The greatest new social media website of 2020 - built from scratch from the phrase 'ya like jazz'.<br>
      This beautiful piece of art was given life to by me and my friend @zaclippy.<br><br> With over a whopping 20 active daily users the community is growing
-    at an unforseeable rate.<br><br> Please make an account and share with your friends!<br><br> Report bugs to me on reddit
-   u/scopreon.<br><br> All code is my own.<br><br>Goodbye.</label>
+    at an unforseeable rate!<br><br> Please make an account and share with your friends!<br><br> If you find any bugs or problems, report them to me on reddit -
+   u/scopreon.<br><br> All code is my own.<br><br>Enjoy!</label>
   </div>
 
   <div class="containerleft">
-      <label id='currentusers'>Current users: <br> <span class="numbers">20</span></label>
+      <label id='currentusers'>Current users: <br> <span class="numbers">
+          <?php
+          error_reporting(E_ERROR);
+          $ignore_errors = true;
+          session_start();
+          include 'test.php';
+          if ($conn->connect_error) {
+              echo "";
+          } else {
+              $full_table = mysql_query("SELECT * FROM messenger.user_data", $link);
+              $num_users = mysql_num_rows($full_table);
+              echo "$num_users";
+          }
+           ?>
+      </span></label>
   </div>
   <div class="containerright">
       <label id='currentversion'>Current version: <br><span class="numbers">Bee Messenger 1.0</span></label>
   </div>
+  <div class="containerfull">
+    Current time: <?php
+    $time = time();
+echo("<br>" . date("H:m",$time) . ",  ");
+echo(date("d/m/Y",$time));
+?>
+</div>
   <?php
   if(isset($_SESSION['username'])){
     echo "<button><a href='logout.php'>Log out <br> <img src='https://cdn2.iconfinder.com/data/icons/e-commerce-line-10-1/1024/logout10-512.png' height='20px'></a></button>";

@@ -1,0 +1,88 @@
+@media (max-width: 525px) {
+    #messages {
+        width: 400px !important;
+        height: 564px !important;
+    }
+
+    #messageBox {
+        width: auto;
+        float: right;
+        width: 70%;
+        margin-right: 2%;
+    }
+
+    label#name {
+        font-size: 14px;
+    }
+
+    #newConvo {
+        width: 80%;
+        font-size: 15px;
+        height: 35px;
+        padding-top: 1px;
+    }
+
+    #newConvo #inputnewcontact {
+        width: 140px;
+        height: 20px;
+    }
+
+    #newConvo input#submitnewcontact {
+        height: 10px;
+    }
+
+    #newConvo in #messageBox input[type='text'] {
+        width: 70%;
+    }
+
+    #message {
+        margin-left: 10px;
+        margin-right: 10px;
+        clear: both;
+        width: 50%;
+        margin-top: 2px;
+        ;
+        margin-bottom: 2px;
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+    p.right {
+        /* text-align: right; */
+        float: right;
+        background-color: #ffb101;
+    }
+
+    p.left {
+        /* text-align: left; */
+        float: left;
+        background-color: black;
+        color: white;
+    }
+
+    #selectContact {
+        width: 80px;
+    }
+
+    .dropdown>.caption {
+        font-size: 12.5px;
+        background-color: #f2f2f2;
+        padding: 6px 6px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .dropdown>.list {
+        position: absolute;
+        background-color: #f2f2f2;
+        width: 50%;
+        border-radius: 0 0 3px 3px;
+        display: none;
+    }
+
+    .dropdown>.list>.item {
+        padding: 3px 6px;
+        cursor: pointer;
+        word-wrap: break-word;
+    }
+}

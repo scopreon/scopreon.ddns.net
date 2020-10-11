@@ -15,6 +15,10 @@
     cursor: pointer;
 }
 
+#newConvo input#submitnewcontact {
+    height: 28px;
+}
+
 .dropdown>.list {
     position: absolute;
     background-color: #f2f2f2;
