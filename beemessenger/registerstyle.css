@@ -311,6 +311,16 @@ img.logo {
         font-weight: bold;
     }
 
+    .container {
+        margin: 0px 0px;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        overflow: auto;
+    }
+
     .homelink1 img {
         display: inline-block;
     }

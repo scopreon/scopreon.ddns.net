@@ -51,8 +51,11 @@
         <form action="message_user_script.php" method="post" target="hidden-form" id='myForm'>
           <input autocomplete="false" type="text" name="message" id='messageBoxText' style="height:40px;width:87.5%;display: inline;font-size:15px;float:left;outline: 2px solid black;">
           <button type="button" id='buttonToClick' onclick="myFunc();" style="height:40px;width:12.5%;display: inline;outline: 2px solid black;"><img src="https://i.pinimg.com/originals/6c/67/20/6c67204787e94850b2635ae5e4db4923.png" height="100%"></button>
-        </form>
-        <button type="button" name="beemoviescript"><a href="beemovie.txt" class="beemoviescript">I need inspiration!</a></button>
+      </form>
+      <div class="beemoviescriptbutton">
+          <br>
+           <button type="button" name="beemoviescript" id="beemoviescriptbutton1"><a href="beemovie.txt" class="beemoviescript">I need inspiration!</a></button><br>
+      </div>
       </div>
       <IFRAME style='display:none' name='hidden-form'></IFRAME>
     </div>

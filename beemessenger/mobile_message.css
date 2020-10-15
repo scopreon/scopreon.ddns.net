@@ -1,29 +1,38 @@
 @media (max-width: 525px) {
     #messages {
-        width: 400px !important;
+        width: 380px !important;
         height: 564px !important;
     }
 
     #messageBox {
         width: auto;
         float: right;
-        width: 70%;
-        margin-right: 2%;
+        width: 68.5%;
+        margin-right: 3%;
     }
 
     label#name {
         font-size: 14px;
     }
 
+    div.beemoviescriptbutton br {
+        font-size: 4px;
+    }
+
+    #buttonToClick img {
+        width: 33px;
+        margin-left: -6px;
+    }
+
     #newConvo {
-        width: 80%;
+        width: 86%;
         font-size: 15px;
         height: 35px;
         padding-top: 1px;
     }
 
     #newConvo #inputnewcontact {
-        width: 140px;
+        width: 142.5px;
         height: 20px;
     }
 
@@ -61,7 +70,7 @@
     }
 
     #selectContact {
-        width: 80px;
+        width: 87px;
     }
 
     .dropdown>.caption {
@@ -75,13 +84,14 @@
     .dropdown>.list {
         position: absolute;
         background-color: #f2f2f2;
-        width: 50%;
         border-radius: 0 0 3px 3px;
-        display: none;
     }
 
     .dropdown>.list>.item {
         padding: 3px 6px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        font-size: 10px;
         cursor: pointer;
         word-wrap: break-word;
     }
