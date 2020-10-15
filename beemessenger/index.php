@@ -45,7 +45,7 @@
       The greatest new social media website of 2020 - built from scratch from the phrase 'ya like jazz'.<br>
      This beautiful piece of art was given life to by me and my friend @zaclippy.<br><br> With over a whopping 20 active daily users the community is growing
     at an unforseeable rate!<br><br> Please make an account and share with your friends!<br><br> If you find any bugs or problems, report them to me on reddit -
-   u/scopreon.<br><br> All code is my own.<br><br>Enjoy!</label>
+   u/scopreon. Feel free to pen-test it, although don't try any bruteforce as it runs on my own server, this will inevitably lead to server crashing. Let me know<br><br> All code is my own.<br><br>Enjoy!</label>
   </div>
 
   <div class="containerleft">
