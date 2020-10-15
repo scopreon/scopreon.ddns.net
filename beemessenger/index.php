@@ -65,7 +65,7 @@
   <div class="containerfull">
     Current time: <?php
     $time = time();
-echo("<br>" . date("H:m",$time) . ",  ");
+echo("<br>" . date("H:i",$time) . ",  ");
 echo(date("d/m/Y",$time));
 ?>
 </div>
