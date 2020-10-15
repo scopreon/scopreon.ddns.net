@@ -7,8 +7,8 @@ $sql = "SELECT * FROM messenger.user_data WHERE `username` = '$username'";
 
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    echo 'username already exists';
+if ($result->num_rows > 0 || $username=='') {
+    echo 'username already exists/error in creation';
 } else {
   $sql = "INSERT INTO messenger.user_data (username,password) VALUES ('$username','$password');";
   $result = $conn->query($sql);
