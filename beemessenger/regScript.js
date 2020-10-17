@@ -63,7 +63,6 @@ function hideFunc() {
 
 $('#btn1').click(function () {
     if (usernameSuccess === true && passwordSuccess === true && passwordMatch === true) {
-        alert('Success');
         document.getElementById("form").submit();
     } else {
         $("div.please").show();

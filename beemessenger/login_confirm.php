@@ -14,5 +14,6 @@
       exit ;
   } else {
       echo 'there was a problem signing in';
+      echo '<br><a href="login.php">Login</a>';
   }
 ?>
