@@ -107,6 +107,10 @@ function myFunc(){
   document.getElementById("messageBoxText").value='';
 }
 
+$( "#submitnewcontact" ).click(function() {
+  window.location=window.location;
+});
+
 $(document).ready(function() {
   $(window).keydown(function(event){
     if(event.keyCode == 13) {
