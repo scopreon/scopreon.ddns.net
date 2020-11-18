@@ -16,9 +16,17 @@
         <nav>
           <ul>
             <a href = 'index.php'><li class = 'selected'>Home</li></a>
-            <a href = 'programming.php'><li>Programming</li></a>
+            <a id='programmingDropdown'><li >Programming
+              <div class='dropdownmenu'>
+                <!-- <button onclick='event.preventDefault()' id='dropdown'> testxg≈ggdxggxd</button> -->
+                <ul class='dropdownmenulist'>
+                  <li class='dropdownmenulist' onclick='event.preventDefault(); window.location.href = "./programming/java.php"'>Java</li>
+                  <li class='dropdownmenulist' onclick='event.preventDefault(); window.location.href = "./programming/python.php"'>Python</li>
+                  <li class='dropdownmenulist' onclick='event.preventDefault(); window.location.href = "./programming/other.php"'>Other</li>
+                </ul>
+              </div>
+            </li></a>
             <a href = 'Chess.php'><li>Chess</li></a>
-            <a href = 'blog.php'><li>Blog</li></a>
             <a href = 'beemessenger/index.php'><li id='beemessenger'>Messenger</li></a>
             <a href = 'other.php'><li>Other</li></a>
           </ul>
@@ -27,10 +35,10 @@
       <div class="clear"></div>
     </header>
     <div class = 'main'>
-      <h2 id = 'welcomeBack'>Welcome</h2>
+      <h2 id = 'welcomeBack'>Welcome Stranger</h2>
       <br>
       <p>This is where I am going to be putting some of my coding projects and some random stuff.<br>
-      I normally do random small projects but I am working on a larger project over the summer which I will put in 'Other'. Here is a test.</p>
+      Check out <a href = '/beemessenger/index.php'>Bee Messenger</a> to see my big project I did over the summer</p>
       <div class='social_media'>
         <a href="https://github.com/scopreon"><img class='sm' alt='Github' src="images/github.png"
           width='50' height='50'></a>
